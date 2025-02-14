@@ -1,0 +1,465 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #056679;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Increased max-width */
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+   
+}
+.header {
+    display: flex; /* Aligns the buttons side by side */
+    gap: 10px; /* Adds space between the buttons */
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px;
+}
+
+.header button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Title */
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="time"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.priority {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  
+  .priority label {
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .edit-priority{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  .edit-priority label{
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+
+  }
+  
+  /* Radio buttons styling */
+  input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #28a745; /* Green accent color for radio buttons */
+  }
+  
+  /* Labels for radio buttons */
+  .priority-label {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .category {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .category select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .edit-category{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .edit-category select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .sort-category{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .sort-category select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .file-label {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; 
+    margin-bottom:20px;
+}
+
+.file-label:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add Task Button */
+button {
+    padding: 10px 18px; /* Increased padding */
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+.table-wrapper {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100%;
+    display: block;
+    margin-bottom: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto; /* Auto-adjust column width */
+}
+
+/* Column Width Adjustments */
+th:nth-child(1), td:nth-child(1) { /* ID Column */
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) { /* Task Name */
+    width: 30%;
+}
+
+th:nth-child(3), td:nth-child(3) { /* Status */
+    width: 20%;
+}
+
+th:nth-child(4), td:nth-child(4) { /* Complete Button */
+    width: 20%;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Delete Button */
+    width: 20%;
+}
+
+/* Table Headers & Cells */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding */
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 16px; /* Improved text size */
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Completed Task Styling */
+td.completed {
+    color: green;
+    font-weight: bold;
+}
+
+/* Complete Button */
+button.complete {
+    background-color: #28a745;
+}
+
+button.complete:hover {
+    background-color: #218838;
+}
+
+/* Delete Button */
+button.delete {
+    background-color: #dc3545;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+button.edit {
+    background-color: #ffc107;
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+
+/* Nodal  */
+
+#edit-modal {
+    display: none;
+   
+  }
+  
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+#uploadBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+#uploadBtn:hover {
+    background-color: #0056b3;
+}
+
+#uploadBtn:active {
+    background-color: #004494;
+}
+
+#taskPercentage{
+    margin-top: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+#upload-task{
+    display: flex;
+    justify-content: center;
+}
+#upload-task p{
+    margin-top: 10px;
+    padding-right: 10px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 20px;
+    font-style: italic;
+
+}
+#upload-csv p{
+    margin-right: 350px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 20px;
+
+}
+.edit-status {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.edit-status label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.edit-status select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+.edit-status select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Parent container */
+#taskContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+/* Auto-Delete button */
+#Auto-Delete button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+ 
+#taskCounter p{
+    font-size: 20px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.blue-btn {
+    background-color: blue;
+}
+
+.red-btn {
+    background-color: red;
+}
+#Auto-Delete p {
+    font-size: 20px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.today-completed-btn {
+    background-color: #28a745; /* Green */
+}
+
+.today-completed-btn:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Today Task - Pending Button */
+.today-pending-btn {
+    background-color: #ff9800; /* Orange */
+}
+
+.today-pending-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Today Task Counter Styling */
+#todayTaskCounter {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Style for Today's Task Title */
+.todays-task {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.overdue-task {
+    background-color: red !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+  
